@@ -17,6 +17,7 @@ Plug 'nelstrom/vim-visual-star-search' " expanding star search from single word 
 Plug 'vim-test/vim-test' " for pytest
 Plug 'preservim/nerdtree' " file tree.
 Plug 'justinmk/vim-sneak' " super quick jumping to desired position.
+Plug 'jiangmiao/auto-pairs' " opening brackets / quotes will add a matching closing pair. ## experimental.
 " Plug 'ryanoasis/vim-devicons' " icon pack
 """""" 
 " Plug 'honza/vim-snippets' " snippets.

@@ -1,8 +1,10 @@
 if has('win32') "window config for windows machine.
+  " au GUIEnter * simalt ~x
   winpos 0 0
   set lines=999
   set columns=160
 endif
+
 set noeb vb t_vb= "disable the annoying bell sound.
 
 if !&scrolloff
