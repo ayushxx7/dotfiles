@@ -18,6 +18,7 @@ Plug 'vim-test/vim-test' " for pytest
 Plug 'preservim/nerdtree' " file tree.
 Plug 'justinmk/vim-sneak' " super quick jumping to desired position.
 Plug 'jiangmiao/auto-pairs' " opening brackets / quotes will add a matching closing pair. ## experimental.
+Plug 'sheerun/vim-polyglot' " better syntax highlighting
 " Plug 'ryanoasis/vim-devicons' " icon pack
 """""" 
 " Plug 'honza/vim-snippets' " snippets.
