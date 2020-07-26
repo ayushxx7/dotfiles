@@ -12,11 +12,11 @@ Plug 'tmhedberg/SimpylFold' " folding for Python Files.
 Plug 'Konfekt/FastFold' " fast folding. 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file search using fzf.
 Plug 'junegunn/fzf.vim' " fzf mappings.
+Plug 'justinmk/vim-sneak' " super quick jumping to desired position.
 Plug 'svermeulen/vim-easyclip' " awesome clipboard like features for yank/delete.
 Plug 'nelstrom/vim-visual-star-search' " expanding star search from single word to all selection.
 Plug 'vim-test/vim-test' " for pytest
 Plug 'preservim/nerdtree' " file tree.
-Plug 'justinmk/vim-sneak' " super quick jumping to desired position.
 Plug 'jiangmiao/auto-pairs' " opening brackets / quotes will add a matching closing pair. ## experimental.
 Plug 'sheerun/vim-polyglot' " better syntax highlighting
 " Plug 'ryanoasis/vim-devicons' " icon pack
