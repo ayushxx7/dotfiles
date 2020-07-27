@@ -5,6 +5,7 @@ Plug 'tpope/vim-repeat' " covers a lot more in the dot (repeat command).
 Plug 'tpope/vim-commentary' " to quickly comment and uncomment statements.
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Intellisense Plugin.
 Plug 'vim-airline/vim-airline' " customized status line.
+Plug 'vim-airline/vim-airline-themes' "airline themes
 Plug 'gruvbox-community/gruvbox' " community gruvbox.
 Plug 'tell-k/vim-autopep8' " conform py file to pep8 standards.
 Plug 'tell-k/vim-autoflake' " remove unused imports and variable names.

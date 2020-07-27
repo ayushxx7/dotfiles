@@ -2,6 +2,7 @@ source $HOME\.config\vim\vim-plug\plugins.vim
 source $HOME\.config\vim\plug-config\sneak.vim
 source $HOME\.config\vim\plug-config\coc.vim
 source $HOME\.config\vim\plug-config\fzf.vim
+source $HOME\.config\vim\themes\airline.vim
 source $HOME\.config\vim\plug-config\nerdtree.vim
 source $HOME\.config\vim\plug-config\vim-test.vim
 source $HOME\.config\vim\keys\mappings.vim
