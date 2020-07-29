@@ -5,6 +5,7 @@ source $HOME\.config\vim\plug-config\fzf.vim
 source $HOME\.config\vim\themes\airline.vim
 source $HOME\.config\vim\plug-config\nerdtree.vim
 source $HOME\.config\vim\plug-config\vim-test.vim
+source $HOME\.config\vim\plug-config\vim-easyclip.vim
 source $HOME\.config\vim\keys\mappings.vim
 source $HOME\.config\vim\general\settings.vim
 source $HOME\.config\vim\general\experimental.vim
