@@ -1,4 +1,5 @@
 source $HOME\.config\vim\vim-plug\plugins.vim
+source $HOME\.config\vim\plug-config\vim-startify.vim
 source $HOME\.config\vim\plug-config\sneak.vim
 source $HOME\.config\vim\plug-config\coc.vim
 source $HOME\.config\vim\plug-config\fzf.vim
