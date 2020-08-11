@@ -1,6 +1,9 @@
 echo off
 echo "Copying .vimrc to:" %userprofile%
 cp .vimrc %userprofile%
+echo "Copying vim directory to .config folder"
+mkdir %userprofile%\.config
+robocopy vim %userprofile%\.config\vim /E
 echo "Making Plugged Directory, where all plugins from git will be stored"
 mkdir %userprofile%\.vim\plugged
 echo "Creating Undo Directory, where undohistory will be save. so you can undo even after you have closed the file."

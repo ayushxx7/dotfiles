@@ -24,5 +24,6 @@ Plug 'jiangmiao/auto-pairs' " opening brackets / quotes will add a matching clos
 Plug 'sheerun/vim-polyglot' " better syntax highlighting
 """experimental""" 
 Plug 'vim-syntastic/syntastic' 
+Plug 'mattn/emmet-vim' " quickly write html.
 " Plug 'ryanoasis/vim-devicons' " icon pack
 call plug#end()  
