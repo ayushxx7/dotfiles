@@ -15,5 +15,5 @@ cp plug.vim %userprofile%\vimfiles\autoload\
 echo "Copying coc-settings.json to autoload directory so it loads as vim loads. it contains some coc prefs"
 cp coc-settings.json %userprofile%\vimfiles\autoload\
 echo "Installing Chocolatey Package Manager"
-Powershell.exe -executionpolicy bypass -File %userprofile%\.config\choco_install_powershell.ps1
+Powershell.exe -executionpolicy bypass -File choco_install_powershell.ps1
 pause
