@@ -34,3 +34,7 @@ autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expa
 
 " set autochdir " working directory will always be the same as your working directory
 
+"""""""""""" This is for DialogFlow quick updation.
+let @t='/messagesf["ad%h"sp'
+let @y='/defaultResponsePlatformsf{"ad%h"gp'
+"""""""""""""

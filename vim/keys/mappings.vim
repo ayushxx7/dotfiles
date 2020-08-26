@@ -1,3 +1,6 @@
+" setting leader key to <space>
+let mapleader=" "
+
 " MAPPINGS
 " Ctrl+F1 to toggle menu bar
 nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
@@ -29,3 +32,7 @@ endif
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
+" remap for substitute command
+nnoremap <leader>z :%s//gc<Left><Left><Left>
+" quickly generate ctags
+nnoremap <leader>t :!ctags -R .
