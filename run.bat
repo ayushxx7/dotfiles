@@ -6,7 +6,7 @@ mkdir %userprofile%\.config
 robocopy vim %userprofile%\.config\vim /E
 echo "Making Plugged Directory, where all plugins from git will be stored"
 mkdir %userprofile%\.vim\plugged
-echo "Creating Undo Directory, where undohistory will be save. so you can undo even after you have closed the file."
+echo "Creating Undo Directory, where undohistory will be saved. so you can undo even after you have closed the file."
 mkdir %userprofile%\.vim\undo-dir
 echo "Creating autoload directory for vim plug - Plugin Manager"
 mkdir %userprofile%\vimfiles\autoload
