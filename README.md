@@ -26,3 +26,6 @@ CoC uses Node.js for the language servers required for autocompletion.
 ### RG
 - Fuzzy line search `<leader>g` or `:Rg`
 - Fuzzy line search inside parent Git directory `<leader>G` or `:GGrep`
+
+## BAT
+- Preview window with syntax highlighting

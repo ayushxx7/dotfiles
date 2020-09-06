@@ -22,6 +22,8 @@ echo "Installing FZF"
 start cmd /k choco install ripgrep -y
 echo "Installing Ripgrep"
 start cmd /k choco install fzf -y
+echo "Installing BAT"
+start cmd /k choco install bat -y
 echo "Killing all cmds"
 call getCmdPID
 set "current_pid=%errorlevel%"
