@@ -11,3 +11,5 @@ source $HOME\.config\vim\plug-config\coc.vim
 source $HOME\.config\vim\plug-config\nerdtree.vim
 source $HOME\.config\vim\plug-config\vim-easyclip.vim
 source $HOME\.config\vim\plug-config\emmet-config.vim
+source $HOME\.config\vim\plug-config\quickscope.vim
+
