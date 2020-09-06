@@ -20,6 +20,7 @@ set ruler " show line number and column number
 set guioptions-=m " removes menu
 set guioptions-=T " removes toolbar
 set guioptions-=r " removes right scrollbar
+:set guioptions-=L  "remove left-hand scroll bar
 set guicursor=a:blinkwait0 " remove cursor blinking
 set nu "absolute line numbers
 set ai "automatic indentation picked from parent line
@@ -29,9 +30,7 @@ set incsearch "search as you type.
 set ff=unix "unix like line endings.
 set foldlevel=99 " by default keep the folds open.
 
-
 " Font & Colorscheme
 set background=dark
 set guifont=Consolas:h13
 set guifontwide=NSimsun:h14
-
