@@ -12,4 +12,5 @@ source $HOME\.config\vim\plug-config\nerdtree.vim
 source $HOME\.config\vim\plug-config\vim-easyclip.vim
 source $HOME\.config\vim\plug-config\emmet-config.vim
 source $HOME\.config\vim\plug-config\quickscope.vim
-
+source $HOME\.config\vim\plug-config\signify.vim
+" lua require'plug-colorizer'
