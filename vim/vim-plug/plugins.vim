@@ -19,6 +19,5 @@ Plug 'vim-airline/vim-airline' " customized status line.
 Plug 'vim-airline/vim-airline-themes' "airline themes
 Plug 'sheerun/vim-polyglot' " better syntax highlighting
 Plug 'unblevable/quick-scope' " highlight for f,F,t,T
-" Plug 'norcalli/nvim-colorizer.lua' " color code hex values and color names
 Plug 'mhinz/vim-signify'
 call plug#end()

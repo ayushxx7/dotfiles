@@ -1,8 +1,5 @@
 if has('win32') "window config for windows machine.
-  " au GUIEnter * simalt ~x
-  winpos 0 0
-  set lines=999
-  set columns=160
+  au GUIEnter * simalt ~x
 endif
 
 set noeb vb t_vb= "disable the annoying bell sound.
@@ -31,10 +28,4 @@ autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,r
 set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
 autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent
 
-
-" set autochdir " working directory will always be the same as your working directory
-
-"""""""""""" This is for DialogFlow quick updation.
-let @t='/messagesf["ad%h"sp'
-let @y='/defaultResponsePlatformsf{"ad%h"gp'
-"""""""""""""
+:nnoremap <F5> :buffers<CR>:buffer<Space>
