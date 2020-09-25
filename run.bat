@@ -1,6 +1,9 @@
 echo off
 echo "Copying .vimrc to:" %userprofile%
 cp .vimrc %userprofile%
+echo "Removing _vimrc:" from %userprofile%\_vimrc
+echo "Storing removed _vimrc as _vimrc_old"
+mv %userprofile%\_vimrc %userprofile%\_vimrc_old
 echo "Copying vim directory to .config folder"
 mkdir %userprofile%\.config
 robocopy vim %userprofile%\.config\vim /E
