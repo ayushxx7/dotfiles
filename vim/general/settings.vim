@@ -3,7 +3,7 @@ syntax on " enable basic syntax highlighting.
 
 set nocompatible " for sneak
 set noswapfile "dont need swapfile
-set undodir=C:/Users/ayush/.vim/undo-dir "stores all undo info in file.
+set undodir=$HOME\.vim\undo-dir "stores all undo info in file.
 set undofile
 scriptencoding utf-8 
 set encoding=utf-8
