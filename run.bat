@@ -17,19 +17,13 @@ cp coc-settings.json %userprofile%\vimfiles\autoload\
 echo "Installing Chocolatey Package Manager"
 Powershell.exe -executionpolicy bypass -File choco_install_powershell.ps1
 echo "Installing Node"
-start cmd /k choco install node -y
+start cmd /k choco choco install nodejs.install -y
 echo "Installing FZF"
 start cmd /k choco install ripgrep -y
 echo "Installing Ripgrep"
 start cmd /k choco install fzf -y
 echo "Installing BAT"
 start cmd /k choco install bat -y
-echo "Killing all cmds"
-call getCmdPID
-set "current_pid=%errorlevel%"
-for /f "skip=3 tokens=2 delims= " %%a in ('tasklist /fi "imagename eq cmd.exe"') do (
-    if "%%a" neq "%current_pid%" (
-        TASKKILL /PID %%a /f >nul 2>nul
-    )
-)
+echo "Make sure to run `:PlugInstall` in Vim once the setup is done."
+echo "You can terminate all Command Prompts Now"
 pause
