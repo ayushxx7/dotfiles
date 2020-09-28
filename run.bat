@@ -20,7 +20,7 @@ cp coc-settings.json %userprofile%\vimfiles\autoload\
 echo "Installing Chocolatey Package Manager"
 Powershell.exe -executionpolicy bypass -File choco_install_powershell.ps1
 echo "Installing Node"
-start cmd /k choco choco install nodejs.install -y
+start cmd /k choco install nodejs.install -y
 echo "Installing FZF"
 start cmd /k choco install ripgrep -y
 echo "Installing Ripgrep"
