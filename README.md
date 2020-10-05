@@ -8,14 +8,9 @@
    - Setup my vim config
    - Install Chocolatey Package Manager.
    - Install node, fzf, and ripgrep using Chocolatey
-4. Open up Gvim or vim, and press enter on all the errors it will throw right now. 
+4. Open up Gvim or vim, and press enter on all the errors it will throw right now.
 5. Enter this command `:PlugInstall`.
 6. Relaunch Gvim.
-
-## Note: 
-- You may need to run the `run.bat` file two times.
-- I am looking for a fix.
-- If anyone has suggestions, please let me know or raise a PR.
 
 ## Additional Software Installed
 ### Chocolatey
