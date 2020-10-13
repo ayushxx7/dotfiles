@@ -19,15 +19,14 @@ echo "Copying coc-settings.json to autoload directory so it loads as vim loads. 
 cp coc-settings.json %userprofile%\vimfiles\autoload\
 echo "Installing Chocolatey Package Manager"
 Powershell.exe -executionpolicy bypass -File choco_install_powershell.ps1
-:: echo "Installing Node"
-:: start cmd /k choco install nodejs.install -y
-:: echo "Installing FZF"
-:: start cmd /k choco install ripgrep -y
-:: echo "Installing Ripgrep"
-:: start cmd /k choco install fzf -y
-:: echo "Installing BAT"
-:: start cmd /k choco install bat -y
-:: echo "Make sure to run `:PlugInstall` in Vim once the setup is done."
-:: echo "You can terminate all Command Prompts Now"
-:: pause
-call installer.bat
+echo "Installing Node"
+start cmd /k choco install nodejs.install -y
+echo "Installing FZF"
+start cmd /k choco install ripgrep -y
+echo "Installing Ripgrep"
+start cmd /k choco install fzf -y
+echo "Installing BAT"
+start cmd /k choco install bat -y
+echo "Make sure to run `:PlugInstall` in Vim once the setup is done."
+echo "You can terminate all Command Prompts Now"
+pause
