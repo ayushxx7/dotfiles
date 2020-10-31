@@ -32,3 +32,27 @@ autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expa
 
 " remove trailing spaces when saving
 autocmd BufWritePre * %s/\s\+$//e
+set modelines=10
+
+"""Lifted from: http://andrewradev.com/2011/04/26/my-vim-workflow-basic-moves/"""
+" move over wrapped lines as well
+nnoremap j gj
+nnoremap k gk
+xnoremap j gj
+xnoremap k gk
+
+" quick jumps in a scrolling fashion
+nmap J 5j
+nmap K 5k
+xmap J 5j
+xmap K 5k
+
+" move between splits
+nmap gh <C-w>h
+nmap gj <C-w>j
+nmap gk <C-w>k
+nmap gl <C-w>l
+
+" move between tabs
+nmap <C-l> gt
+nmap <C-h> gT
