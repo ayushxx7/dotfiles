@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file search using fzf.
 Plug 'junegunn/fzf.vim', { 'commit': '23dda8602f138a9d75dd03803a79733ee783e356'}
 " Plug 'junegunn/fzf.vim' " fzf mappings.
-Plug 'tpope/vim-fugitive' "git plugin 
+Plug 'tpope/vim-fugitive' "git plugin
 Plug 'tpope/vim-commentary' " to quickly comment and uncomment statements.
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Intellisense Plugin.
 Plug 'preservim/nerdtree' " file tree.
@@ -20,4 +20,5 @@ Plug 'vim-airline/vim-airline-themes' "airline themes
 Plug 'sheerun/vim-polyglot' " better syntax highlighting
 Plug 'unblevable/quick-scope' " highlight for f,F,t,T
 Plug 'mhinz/vim-signify'
+Plug 'wellle/targets.vim' " experiment - more text objects to operate on
 call plug#end()
