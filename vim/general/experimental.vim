@@ -1,12 +1,3 @@
-if has('win32') "window config for windows machine.
-  au GUIEnter * simalt ~x
-endif
-
-set noeb vb t_vb= "disable the annoying bell sound.
-
-if !&scrolloff
-  set scrolloff=1
-endif
 
 if !&sidescrolloff
   set sidescrolloff=5
@@ -21,18 +12,7 @@ let g:autoflake_remove_unused_variables=1
 
 let g:SimpylFold_docstring_preview=1 " preview docstrings on folded methods.
 
-"status line color changes when moving in and out of insert mode.
-autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
-autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
-
-set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
-autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent
-
-:nnoremap <F5> :buffers<CR>:buffer<Space>
-
-" remove trailing spaces when saving
-autocmd BufWritePre * %s/\s\+$//e
-set modelines=10
+nnoremap <F5> :buffers<CR>:buffer<Space>
 
 """Lifted from: http://andrewradev.com/2011/04/26/my-vim-workflow-basic-moves/"""
 " move over wrapped lines as well
@@ -54,5 +34,12 @@ nmap gk <C-w>k
 nmap gl <C-w>l
 
 " move between tabs
-nmap <C-l> gt
-nmap <C-h> gT
+nmap <C-j> gt
+nmap <C-k> gT
+
+" snippets
+" ActivateAddons vim-snippets snipmate
+
+" reisze windows hotkeys
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
