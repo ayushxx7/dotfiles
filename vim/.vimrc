@@ -13,3 +13,5 @@ source $HOME\\.config\\vim\\plug-config\\vim-easyclip.vim
 source $HOME\\.config\\vim\\plug-config\\emmet-config.vim
 source $HOME\\.config\\vim\\plug-config\\quickscope.vim
 source $HOME\\.config\\vim\\plug-config\\signify.vim
+source $HOME\\.config\\vim\\plug-config\\easy-align.vim
+source $HOME\\.config\\vim\\plug-config\\brightest.vim
