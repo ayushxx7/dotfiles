@@ -25,6 +25,9 @@ Plug 'kana/vim-textobj-user'                        " experiment - custom text o
 Plug 'bps/vim-textobj-python'                       " experiment - custom text object for python
 Plug 'osyo-manga/vim-brightest'                     " experiment - highlight word you are on
 Plug 'junegunn/vim-easy-align'                      " align text around a delimiter
+if has('nvim')
+  Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
+endif
 Plug 't9md/vim-choosewin' " switch between windows easily
 " Plug 'SirVer/ultisnips' " experiment - snippets
 " Plug 'MarcWeber/vim-addon-mw-utils'
