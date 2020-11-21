@@ -52,7 +52,7 @@ autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,r
 
 " file settings
 set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
-autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent
+autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent foldmethod=indent
 
 
 " remove trailing spaces when saving
