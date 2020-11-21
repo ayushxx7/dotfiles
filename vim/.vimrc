@@ -15,3 +15,4 @@ source $HOME\\.config\\vim\\plug-config\\quickscope.vim
 source $HOME\\.config\\vim\\plug-config\\signify.vim
 source $HOME\\.config\\vim\\plug-config\\easy-align.vim
 source $HOME\\.config\\vim\\plug-config\\brightest.vim
+source $HOME\\.config\\vim\\plug-config\\choosewin.vim
