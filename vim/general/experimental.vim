@@ -43,3 +43,4 @@ nmap <C-k> gT
 " reisze windows hotkeys
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+set nu "Works well with rnu. Current line number is set to actual value instead of 0
