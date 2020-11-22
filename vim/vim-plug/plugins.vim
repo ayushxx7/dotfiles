@@ -14,10 +14,19 @@ Plug 'tpope/vim-repeat'                             " covers a lot more in the d
 Plug 'nelstrom/vim-visual-star-search'              " expanding star search from single word to all selection.
 Plug 'mhinz/vim-startify'                           " cool startup screen
 Plug 'mattn/emmet-vim'                              " quickly write html.
-Plug 'gruvbox-community/gruvbox'                    " community gruvbox.
+
+"THEMES
+Plug 'gruvbox-community/gruvbox'
+Plug 'ayu-theme/ayu-vim'
+Plug 'romainl/Apprentice'
+Plug 'joshdick/onedark.vim'
+Plug 'rafi/awesome-vim-colorschemes'
+
+"THEME ENHANCEMENTS
 Plug 'vim-airline/vim-airline'                      " customized status line.
 Plug 'vim-airline/vim-airline-themes'               " airline themes
 Plug 'sheerun/vim-polyglot'                         " better syntax highlighting
+
 Plug 'unblevable/quick-scope'                       " highlight for f,F,t,T
 Plug 'mhinz/vim-signify'
 Plug 'wellle/targets.vim'                           " experiment - more text objects to operate on
