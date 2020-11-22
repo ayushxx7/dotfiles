@@ -38,6 +38,7 @@ if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
 endif
 Plug 't9md/vim-choosewin' " switch between windows easily
+Plug 'weilbith/nerdtree_choosewin-plugin'           " choose buffer when opening a file with nerdtree
 " Plug 'SirVer/ultisnips' " experiment - snippets
 " Plug 'MarcWeber/vim-addon-mw-utils'
 " Plug 'tomtom/tlib_vim'
