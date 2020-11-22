@@ -8,7 +8,8 @@ if !exists('g:easy_align_delimiters')
   let g:easy_align_delimiters = {}
 endif
 " Ignore delimiters that are NOT (!) highlighted as comment
-let g:easy_align_delimiters['"'] = { 'pattern': '"' }
+" let g:easy_align_delimiters['"'] = { 'pattern': '"' }
+let g:easy_align_delimiters['"'] = { 'pattern': '"', 'ignore_groups': ['!Comment'] }
 
 function! GFM()
 let langs = ['ruby', 'yaml', 'vim', 'c']
