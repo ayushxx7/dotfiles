@@ -38,6 +38,7 @@ Plug 'bogado/file-line'                   " file:line jump (experiment)
 Plug 't9md/vim-choosewin'                 " switch between windows easily
 Plug 'weilbith/nerdtree_choosewin-plugin' " choose buffer when opening a file with nerdtree
 Plug 'romainl/vim-cool'                   " disable hl when search complete
+Plug 'Yggdroot/indentLine'                "show indent lines (fancy stuff, might not actually need it since Python)
 " Neovim only Plugins
 if has('nvim')
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
