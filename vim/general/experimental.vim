@@ -101,3 +101,7 @@ nnoremap <silent> <Leader>O :<C-U>call append(line('.') - 1, repeat([''], v:coun
 " Change current directory of current window.
 nnoremap <silent> <Leader>cd :<C-U>cd %:p:h<CR>
 " Lifted from: https://github.com/mopp/dotfiles/blob/master/.vimrc
+
+" Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
+com! FormatJSON %!python -m json.tool
+" Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
