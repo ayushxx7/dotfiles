@@ -16,3 +16,4 @@ source $HOME\\.config\\vim\\plug-config\\signify.vim
 source $HOME\\.config\\vim\\plug-config\\easy-align.vim
 source $HOME\\.config\\vim\\plug-config\\brightest.vim
 source $HOME\\.config\\vim\\plug-config\\choosewin.vim
+source $HOME\\.config\\vim\\plug-config\\vim-polyglot.vim
