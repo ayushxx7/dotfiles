@@ -105,3 +105,6 @@ nnoremap <silent> <Leader>cd :<C-U>cd %:p:h<CR>
 " Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
 com! FormatJSON %!python -m json.tool
 " Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
+
+" Lifted from CocPrettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
