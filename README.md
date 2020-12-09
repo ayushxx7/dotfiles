@@ -3,6 +3,7 @@
 ### How to setup:
 1. Make sure you have at least version 8.2 December 2019 release of Vim or higher.
    - Chocolatey can be used: `choco install vim`
+   *Note: you may need to remove previous installation of Vim as it might interfere with this method. (The config might still be picked from the previous installation as choco installs in %userdir%/tools) 
 2. Clone this repo: `git clone https://github.com/ayushxx7/dotfiles`
 3. Run `run.bat` file with `Admin Priveleges`. This will
    - Setup my vim config
