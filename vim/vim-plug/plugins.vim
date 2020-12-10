@@ -42,6 +42,7 @@ Plug 'Yggdroot/indentLine'                "show indent lines (fancy stuff, might
 " Neovim only Plugins
 if has('nvim')
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
+Plug 'aonemd/kuroi.vim'
 endif
 
 call plug#end()
