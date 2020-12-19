@@ -79,9 +79,6 @@ if has('nvim')
 endif
 " Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
 
-
-
-
 " Lifted from: https://github.com/mopp/dotfiles/blob/master/.vimrc
 " Changing window size.
 noremap <silent> <S-Left>  :<C-U>wincmd <<CR>
@@ -96,10 +93,9 @@ noremap <silent> <S-Down>  :<C-U>wincmd +<CR>
 
 " Adding blank lines. (Press Enter to add empty lines)
 nnoremap <silent><expr> <CR> &buftype ==# 'quickfix' ? '<CR>' : ':<C-U>call append(".", repeat([""], v:count1))<CR>'
-nnoremap <silent> <Leader>O :<C-U>call append(line('.') - 1, repeat([''], v:count1))<CR>
 
 " Change current directory of current window.
-nnoremap <silent> <Leader>cd :<C-U>cd %:p:h<CR>
+" nnoremap <silent> <Leader>v :<C-U>cd %:p:h<CR>
 " Lifted from: https://github.com/mopp/dotfiles/blob/master/.vimrc
 
 " Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
@@ -108,3 +104,14 @@ com! FormatJSON %!python -m json.tool
 
 " Lifted from CocPrettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" https://www.youtube.com/watch?v=x8uleL9j5lY
+nmap // :BLines<CR>
+nmap ?? :Rg!<CR>
+command! FileHistory execute ":BCommits!"
+command! Resource source ~\\.vimrc
+command! OpenVimrc :edit ~\\.config\vim\general\experimental.vim
+
+" https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
+command! ChangeDirToBuffer :cd %:p:h
+command! ChangeDirToBufferForCurrentWindow :lcd %:p:h
