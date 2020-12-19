@@ -29,6 +29,7 @@ set hlsearch                    " highlight search
 set incsearch                   " search as you type.
 set ff=unix                     " unix like line endings.
 set foldlevel=99                " by default keep the folds open.
+set isk+=-                      " dash separted words to text-object
 
 " Font & Colorscheme
 set background=dark
@@ -36,33 +37,33 @@ set guifont=Consolas:h13
 set guifontwide=NSimsun:h14
 
 
-if has('win32')                 "Open Gvim in fullscreen if Windows
+if has('win32')                 " Open Gvim in fullscreen if Windows
   au GUIEnter * simalt ~x
 endif
 
-set noeb vb t_vb=               "disable the annoying bell sound.
+set noeb vb t_vb=               " disable the annoying bell sound.
 
 if !&scrolloff
   set scrolloff=1
 endif
 
-" status line color changes when moving in and out of insert mode.
+                                " status line color changes when moving in and out of insert mode.
 autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
 autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
-" file settings
+                                " file settings
 set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
 autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent foldmethod=indent
 
 
-" remove trailing spaces when saving
+                                " remove trailing spaces when saving
 autocmd BufWritePre * %s/\s\+$//e
 
 set modelines=10                " file level vim config
 
 
-"Lifted from: http://andrewradev.com/2011/04/26/my-vim-workflow-basic-moves/
-"scroll over sub-lines (lines that are wrapped by default)
+" Lifted from: http://andrewradev.com/2011/04/26/my-vim-workflow-basic-moves/
+" scroll over sub-lines (lines that are wrapped by default)
 nnoremap j gj
 nnoremap k gk
 xnoremap j gj
