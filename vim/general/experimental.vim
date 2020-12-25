@@ -110,8 +110,16 @@ nmap // :BLines<CR>
 nmap ?? :Rg!<CR>
 command! FileHistory execute ":BCommits!"
 command! Resource source ~\\.vimrc
-command! OpenVimrc :edit ~\\.config\vim\general\experimental.vim
+command! OpenVimrc :edit ~\\.config\\vim\\general\\experimental.vim
 
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 command! ChangeDirToBuffer :cd %:p:h
 command! ChangeDirToBufferForCurrentWindow :lcd %:p:h
+
+" disable auto pairs in .vimrc folder
+" au BufNewFile,BufRead ~\\.config\\ <M-p>
+
+if has('nvim')
+    set inccommand=nosplit
+endif
+
