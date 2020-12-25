@@ -17,7 +17,7 @@ let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffse
 " let g:fzf_layout = { 'window': 'vs' } " in case preview not working properly.
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline' "might add --no-unicode
 let $FZF_DEFAULT_COMMAND="rg --files --hidden"
-"FILE="${FILE//\\\\/\/}"
+
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
