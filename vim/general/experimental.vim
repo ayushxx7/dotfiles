@@ -110,7 +110,6 @@ nmap // :BLines<CR>
 nmap ?? :Rg!<CR>
 command! FileHistory execute ":BCommits!"
 command! Resource source ~\\.vimrc
-command! OpenVimrc :edit ~\\.config\\vim\\general\\experimental.vim
 
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 command! ChangeDirToBuffer :cd %:p:h
