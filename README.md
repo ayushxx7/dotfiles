@@ -4,10 +4,15 @@
 
 1. Make sure you have at least version 8.2 December 2019 release of Vim\* or higher.
 2. Clone this repo: `git clone https://github.com/ayushxx7/dotfiles`
-3. Run `run.bat` file with `Admin Priveleges`. This will
-   - Setup my vim config
-   - Install Chocolatey Package Manager.
-   - Install node, fzf, and ripgrep using Chocolatey
+3. Run `run.bat` file with `Admin Priveleges`. In case you don't open the bat in admin mode, it will try to launch itself in Admin mode.
+
+This will
+
+- Setup my vim config
+- Install Chocolatey Package Manager.
+- Install node, fzf, and ripgrep using Chocolatey
+  \*Note: You would most likely need to run the bat file twice, as first time chocolatey will be installed, and the second time the other dependencies will be installed using chocolatey. I am looking for a way make this seamless. If anyone has ideas, please let me know.
+
 4. Open up Gvim or vim, and press enter on all the errors it will throw right now.
 5. Enter this command `:PlugInstall`.
 6. Relaunch Gvim.
