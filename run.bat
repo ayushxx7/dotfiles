@@ -30,5 +30,7 @@ start cmd /k choco install fzf -y
 echo "Installing BAT"
 start cmd /k choco install bat -y
 echo "Make sure to run `:PlugInstall` in Vim once the setup is done."
+echo "Trying to run PlugInstall automatically"
+vim -s install_plugins.txt
 echo "You can terminate all Command Prompts Now"
 pause
