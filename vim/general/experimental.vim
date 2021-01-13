@@ -2,17 +2,6 @@ if !&sidescrolloff
   set sidescrolloff=5
 endif
 
-let g:netrw_browse_split=2
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
-
-let g:autoflake_remove_all_unused_imports=1
-let g:autoflake_remove_unused_variables=1
-
-let g:SimpylFold_docstring_preview=1 " preview docstrings on folded methods.
-
-nnoremap <F5> :buffers<CR>:buffer<Space>
-
 """Lifted from: http://andrewradev.com/2011/04/26/my-vim-workflow-basic-moves/"""
 " move over wrapped lines as well
 nnoremap j gj
@@ -35,13 +24,6 @@ nmap gl <C-w>l
 " move between tabs
 nmap <C-j> gt
 nmap <C-k> gT
-
-" snippets
-" ActivateAddons vim-snippets snipmate
-
-" reisze windows hotkeys -- NEVER USED -- remove in next push
-"nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
-"nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 set nu "Works well with rnu. Current line number is set to actual value instead of 0
 
@@ -94,10 +76,6 @@ noremap <silent> <S-Down>  :<C-U>wincmd +<CR>
 " Adding blank lines. (Press Enter to add empty lines)
 nnoremap <silent><expr> <CR> &buftype ==# 'quickfix' ? '<CR>' : ':<C-U>call append(".", repeat([""], v:count1))<CR>'
 
-" Change current directory of current window.
-" nnoremap <silent> <Leader>v :<C-U>cd %:p:h<CR>
-" Lifted from: https://github.com/mopp/dotfiles/blob/master/.vimrc
-
 " Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
 com! FormatJSON %!python -m json.tool
 " Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
@@ -114,9 +92,6 @@ command! Resource source ~\\.vimrc
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 command! ChangeDirToBuffer :cd %:p:h
 command! ChangeDirToBufferForCurrentWindow :lcd %:p:h
-
-" disable auto pairs in .vimrc folder
-" au BufNewFile,BufRead ~\\.config\\ <M-p>
 
 if has('nvim')
     set inccommand=nosplit
