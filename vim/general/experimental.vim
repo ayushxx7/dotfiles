@@ -25,41 +25,39 @@ nmap gl <C-w>l
 nmap <C-j> gt
 nmap <C-k> gT
 
-set nu "Works well with rnu. Current line number is set to actual value instead of 0
+set nu         " Works well with rnu. Current line number is set to actual value instead of 0
 
-set isfname-=: "jump to file:linenumber from stacktrace
-set path=.\** "vim's find can search the directories recursively
+set isfname-=: " jump to file:linenumber from stacktrace
+set path=.\**  " vim's find can search the directories recursively
 
 " press `comma` to swtich to normal mode in terminal
 tnoremap , <C-\><C-n>
 
 " Move between terminal and normal windows easily
 " Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
-" --- not sure why this is only for nvim.
-" --- test if works in vim
-if has('nvim')
-  " Terminal mode:
-  tnoremap <M-h> <c-\><c-n><c-w>h
-  tnoremap <M-j> <c-\><c-n><c-w>j
-  tnoremap <M-k> <c-\><c-n><c-w>k
-  tnoremap <M-l> <c-\><c-n><c-w>l
-  " Insert mode:
-  inoremap <M-h> <Esc><c-w>h
-  inoremap <M-j> <Esc><c-w>j
-  inoremap <M-k> <Esc><c-w>k
-  inoremap <M-l> <Esc><c-w>l
-  " Visual mode:
-  vnoremap <M-h> <Esc><c-w>h
-  vnoremap <M-j> <Esc><c-w>j
-  vnoremap <M-k> <Esc><c-w>k
-  vnoremap <M-l> <Esc><c-w>l
-  " Normal mode:
-  nnoremap <M-h> <c-w>h
-  nnoremap <M-j> <c-w>j
-  nnoremap <M-k> <c-w>k
-  nnoremap <M-l> <c-w>l
-endif
-" Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
+
+" Terminal mode:
+tnoremap <M-h> <c-\><c-n><c-w>h
+tnoremap <M-j> <c-\><c-n><c-w>j
+tnoremap <M-k> <c-\><c-n><c-w>k
+tnoremap <M-l> <c-\><c-n><c-w>l
+" Insert mode:
+inoremap <M-h> <Esc><c-w>h
+inoremap <M-j> <Esc><c-w>j
+inoremap <M-k> <Esc><c-w>k
+inoremap <M-l> <Esc><c-w>l
+" Visual mode:
+vnoremap <M-h> <Esc><c-w>h
+vnoremap <M-j> <Esc><c-w>j
+vnoremap <M-k> <Esc><c-w>k
+vnoremap <M-l> <Esc><c-w>l
+" Normal mode:
+nnoremap <M-h> <c-w>h
+nnoremap <M-j> <c-w>j
+nnoremap <M-k> <c-w>k
+nnoremap <M-l> <c-w>l
+
+"Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
 
 " Lifted from: https://github.com/mopp/dotfiles/blob/master/.vimrc
 " Changing window size.
