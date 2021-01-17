@@ -61,10 +61,7 @@ autocmd BufWritePre * %s/\s\+$//e
 
 set modelines=10                " file level vim config
 
+set nu         " Works well with rnu. Current line number is set to actual value instead of 0
 
-" Lifted from: http://andrewradev.com/2011/04/26/my-vim-workflow-basic-moves/
-" scroll over sub-lines (lines that are wrapped by default)
-nnoremap j gj
-nnoremap k gk
-xnoremap j gj
-xnoremap k gk
+set isfname-=: " jump to file:linenumber from stacktrace
+set path=.\**  " vim's find can search the directories recursively
