@@ -1,7 +1,3 @@
-if !&sidescrolloff
-  set sidescrolloff=5
-endif
-
 " quick jumps in a scrolling fashion
 nmap J 5j
 nmap K 5k
@@ -35,4 +31,3 @@ command! ChangeDirToBufferForCurrentWindow :lcd %:p:h
 if has('nvim')
     set inccommand=nosplit
 endif
-

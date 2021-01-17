@@ -47,6 +47,9 @@ if !&scrolloff
   set scrolloff=1
 endif
 
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
                                 " status line color changes when moving in and out of insert mode.
 autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
 autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
