@@ -50,9 +50,6 @@ endif
 if !&sidescrolloff
   set sidescrolloff=5
 endif
-                                " status line color changes when moving in and out of insert mode.
-autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
-autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
                                 " file settings
 set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
@@ -68,3 +65,18 @@ set nu         " Works well with rnu. Current line number is set to actual value
 
 set isfname-=: " jump to file:linenumber from stacktrace
 set path=.\**  " vim's find can search the directories recursively
+
+" Theme Customisation
+" colorscheme gruvbox
+" colorscheme embark
+colorscheme PaperColor
+set termguicolors
+
+" Font & Colorscheme
+set background=dark
+set guifont=Consolas:h13
+set guifontwide=NSimsun:h14
+
+" Status line color changes when moving in and out of insert mode.
+autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
+autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
