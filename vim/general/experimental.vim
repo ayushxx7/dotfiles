@@ -31,3 +31,6 @@ command! ChangeDirToBufferForCurrentWindow :lcd %:p:h
 if has('nvim')
     set inccommand=nosplit
 endif
+
+" substitute in last visual selection
+nnoremap <leader>x :%s/\%V//gc<Left><Left><Left><Left>
