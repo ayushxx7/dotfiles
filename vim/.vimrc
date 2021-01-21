@@ -1,7 +1,7 @@
 source $HOME\\.config\\vim\\vim-plug\\plugins.vim
+source $HOME\\.config\\vim\\keys\\mappings.vim
 source $HOME\\.config\\vim\\general\\settings.vim
 source $HOME\\.config\\vim\\general\\experimental.vim
-source $HOME\\.config\\vim\\keys\\mappings.vim
 source $HOME\\.config\\vim\\themes\\airline.vim
 source $HOME\\.config\\vim\\plug-config\\vim-startify.vim
 source $HOME\\.config\\vim\\plug-config\\fzf.vim
