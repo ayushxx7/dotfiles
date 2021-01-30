@@ -34,3 +34,6 @@ endif
 
 " substitute in last visual selection
 nnoremap <leader>x :%s/\%V//gc<Left><Left><Left><Left>
+
+nmap <leader>, :set nornu<CR>
+nmap ,<leader> :set rnu<CR>
