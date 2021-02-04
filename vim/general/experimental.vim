@@ -37,3 +37,5 @@ nnoremap <leader>x :%s/\%V//gc<Left><Left><Left><Left>
 
 nmap <leader>, :set nornu<CR>
 nmap ,<leader> :set rnu<CR>
+
+nmap <leader><leader> :tab ter<CR>A
