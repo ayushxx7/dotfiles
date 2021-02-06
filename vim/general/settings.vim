@@ -59,9 +59,9 @@ autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expa
 autocmd BufWritePre * %s/\s\+$//e
 
 " Theme Customisation
-" colorscheme gruvbox
+colorscheme gruvbox
 " colorscheme embark
-colorscheme PaperColor
+" colorscheme PaperColor
 set termguicolors
 
 " Font & Colorscheme
