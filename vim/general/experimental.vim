@@ -17,12 +17,14 @@ com! FormatJSON %!python -m json.tool
 
 " Lifted from CocPrettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+nmap ,p :Prettier<CR>
 
 " https://www.youtube.com/watch?v=x8uleL9j5lY
 nmap // :BLines<CR>
 nmap ?? :Rg!<CR>
 command! FileHistory execute ":BCommits!"
 command! Resource source ~\\.vimrc
+nmap ,r :Resource<CR>
 
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 command! ChangeDirToBuffer :cd %:p:h
