@@ -8,7 +8,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Intellisense Plugin.
 Plug 'preservim/nerdtree'                           " file tree.
 Plug 'justinmk/vim-sneak'                           " super quick jumping to desired position.
 Plug 'svermeulen/vim-easyclip'                      " awesome clipboard like features for yank/delete.
-Plug 'jiangmiao/auto-pairs'                         " opening brackets / quotes will add a matching closing pair
+Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }      " opening brackets / quotes will add a matching closing pair
 Plug 'tpope/vim-surround'                           " changing surrounding brackets characters
 Plug 'tpope/vim-repeat'                             " covers a lot more in the dot (repeat command).
 Plug 'nelstrom/vim-visual-star-search'              " expanding star search from single word to all selection.
