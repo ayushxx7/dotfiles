@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file search using fzf.
-" Plug 'junegunn/fzf.vim', { 'commit': '23dda8602f138a9d75dd03803a79733ee783e356'}
 Plug 'junegunn/fzf.vim'                             " fzf mappings.
 Plug 'tpope/vim-fugitive'                           " git plugin
 Plug 'tpope/vim-commentary'                         " to quickly comment and uncomment statements.
@@ -13,7 +12,6 @@ Plug 'tpope/vim-surround'                           " changing surrounding brack
 Plug 'tpope/vim-repeat'                             " covers a lot more in the dot (repeat command).
 Plug 'nelstrom/vim-visual-star-search'              " expanding star search from single word to all selection.
 Plug 'mhinz/vim-startify'                           " cool startup screen
-Plug 'mattn/emmet-vim'                              " --- never used this (expands html/css ig)
 
 " THEMES
 Plug 'gruvbox-community/gruvbox'
@@ -43,14 +41,7 @@ Plug 'Yggdroot/indentLine'                          " show indent lines (fancy s
 Plug 'machakann/vim-highlightedyank'                " yanks will be highlighed for a short duration
 " Neovim only Plugins
 if has('nvim')
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
+  Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
 endif
+
 call plug#end()
-
-
-" Plug 'wsdjeg/vim-fetch'                             " file:lineno jump (Experiment)
-" Plug 'SirVer/ultisnips' " experiment - snippets
-" Plug 'MarcWeber/vim-addon-mw-utils'
-" Plug 'tomtom/tlib_vim'
-" Plug 'garbas/vim-snipmate'
-" Plug 'honza/vim-snippets' " experiment - python snippets
