@@ -42,3 +42,9 @@ nmap <leader>, :set nornu<CR>
 nmap ,<leader> :set rnu<CR>
 
 nmap <leader><leader> :tab ter<CR>A
+
+nmap ,, :%s/^\s*//gc<CR>
+
+map ,m :colorscheme molokai<CR>
+map ,c :colorscheme PaperColor<CR>
+map ,g :colorscheme gruvbox<CR>
