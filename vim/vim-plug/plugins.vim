@@ -27,18 +27,22 @@ Plug 'vim-airline/vim-airline-themes'               " airline themes
 Plug 'sheerun/vim-polyglot'                         " better syntax highlighting
 
 Plug 'unblevable/quick-scope'                       " highlight for f,F,t,T
-Plug 'mhinz/vim-signify'
-Plug 'wellle/targets.vim'                           " experiment - more text objects to operate on
-Plug 'kana/vim-textobj-user'                        " experiment - custom text objects
-Plug 'bps/vim-textobj-python'                       " experiment - custom text object for python
-Plug 'osyo-manga/vim-brightest'                     " experiment - highlight word you are on
+Plug 'mhinz/vim-signify'                            " real time diff marker w.r.t HEAD
+Plug 'wellle/targets.vim'                           " change in `next` <quote> (cin')
+
+Plug 'osyo-manga/vim-brightest'                     " highlight word you are on
 Plug 'junegunn/vim-easy-align'                      " align text around a delimiter
-Plug 'bogado/file-line'                             " file:line jump (experiment)
+Plug 'bogado/file-line'                             " file:line jump
 Plug 't9md/vim-choosewin'                           " switch between windows easily
 Plug 'weilbith/nerdtree_choosewin-plugin'           " choose buffer when opening a file with nerdtree
 Plug 'romainl/vim-cool'                             " disable hl when search complete
-Plug 'Yggdroot/indentLine'                          " show indent lines (fancy stuff, might not actually need it since Python)
-Plug 'machakann/vim-highlightedyank'                " yanks will be highlighed for a short duration
+Plug 'Yggdroot/indentLine'                          " show indents
+Plug 'machakann/vim-highlightedyank'                " highlight yank
+Plug 'embark-theme/vim', { 'as': 'embark' }         " colorscheme embark
+
+Plug 'vim-scripts/python_match.vim'                 " extend % match for python
+Plug 'raimon49/requirements.txt.vim'                " syn-hl for requirements.txt
+Plug 'MTDL9/vim-log-highlighting'                   " syn-hl for logs
 " Neovim only Plugins
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
