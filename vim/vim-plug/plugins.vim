@@ -43,6 +43,11 @@ Plug 'embark-theme/vim', { 'as': 'embark' }         " colorscheme embark
 Plug 'vim-scripts/python_match.vim'                 " extend % match for python
 Plug 'raimon49/requirements.txt.vim'                " syn-hl for requirements.txt
 Plug 'MTDL9/vim-log-highlighting'                   " syn-hl for logs
+
+Plug 'kana/vim-textobj-user'                        " custom text objects
+Plug 'kana/vim-textobj-indent'                      " custom text object for indent (cai/cii/caI/ciI)
+Plug 'kana/vim-textobj-line'                        " custom text object for line (cil/cal)
+Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
 " Neovim only Plugins
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
