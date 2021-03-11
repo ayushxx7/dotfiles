@@ -49,6 +49,7 @@ Plug 'kana/vim-textobj-user'                        " custom text objects
 Plug 'kana/vim-textobj-indent'                      " custom text object for indent (cai/cii/caI/ciI)
 Plug 'kana/vim-textobj-line'                        " custom text object for line (cil/cal)
 Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
+Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
 " Neovim only Plugins
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
