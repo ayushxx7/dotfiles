@@ -37,9 +37,12 @@ endif
 " substitute in last visual selection
 noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
 
-nmap <leader><leader> :tab ter<CR>A
+nmap ,, :ter<CR>A
+if has('nvim')
+    nmap <leader><leader> :bo vnew term://cmd<CR>A
+endif
 
-nmap ,, :%s/^\s*//gc<CR>
+nmap <leader>, :%s/^\s*//gc<CR>
 
 map ,m :colorscheme molokai<CR>
 map ,c :colorscheme PaperColor<CR>
