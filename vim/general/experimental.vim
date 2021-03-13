@@ -27,8 +27,8 @@ command! Resource source ~\\.vimrc
 nmap ,r :Resource<CR>
 
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
-command! ChangeDirToBuffer :cd %:p:h
-command! ChangeDirToBufferForCurrentWindow :lcd %:p:h
+command! Cd :cd %:p:h
+command! Cdw :lcd %:p:h
 
 if has('nvim')
     set inccommand=nosplit
