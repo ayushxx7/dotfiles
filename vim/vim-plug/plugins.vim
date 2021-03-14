@@ -53,9 +53,13 @@ Plug 'will133/vim-dirdiff'                          " calculate diff betwee dire
 Plug 'tweekmonster/django-plus.vim'                 " for django dev
 Plug 'Glench/Vim-Jinja2-Syntax'  "jinja syn-hl
 Plug 'mattn/emmet-vim'
+
 " Neovim only Plugins
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'christianchiarulli/nvcode-color-schemes.vim'
+  Plug 'nvim-treesitter/playground'
 endif
 
 call plug#end()
