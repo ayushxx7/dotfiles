@@ -22,6 +22,8 @@ endif
 
 " remap for substitute command
 nnoremap <leader>z :%s//gc<Left><Left><Left>
+" substitute in last visual selection
+noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
 " quickly generate ctags
 nnoremap <leader>t :!ctags -R .
 

@@ -1,8 +1,5 @@
 nmap ?? :Rg!<CR>
 
-" substitute in last visual selection
-noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
-
 if has('nvim')
     nmap <leader><leader> :bo vnew term://cmd<CR>A
 endif
