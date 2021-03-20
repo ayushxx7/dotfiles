@@ -87,4 +87,25 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 if has('nvim')
     set inccommand=nosplit
+
+"treesitter
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "python", "javascript", "lua" },
+  highlight = {
+    enable = true,
+  },
+}
+EOF
+
+" configure nvcode-color-schemes
+let g:nvcode_termcolors=256
+" colorscheme snazzy
+colorscheme tender
+
+if (has("termguicolors"))
+    set termguicolors
+    " hi LineNr ctermbg=NONE guibg=NONE
+endif
+
 endif
