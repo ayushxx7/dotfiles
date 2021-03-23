@@ -1,9 +1,3 @@
-" quick jumps in a scrolling fashion
-nmap J 5j
-nmap K 5k
-xmap J 5j
-xmap K 5k
-
 " move between tabs
 nmap <C-j> gt
 nmap <C-k> gT

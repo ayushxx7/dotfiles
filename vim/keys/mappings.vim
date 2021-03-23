@@ -76,3 +76,10 @@ xnoremap k gk
 " https://www.reddit.com/r/vim/comments/bk2l3i/delete_surrounding_function_calls_the_easy_way/emew99g?utm_source=share&utm_medium=web2x&context=3
 nmap <silent> dsf ds)db
 nnoremap <silent> csf [(cb
+
+
+" quick jumps in a scrolling fashion
+nmap J 5j
+nmap K 5k
+xmap J 5j
+xmap K 5k
