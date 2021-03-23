@@ -14,8 +14,6 @@ map tq :tabclose<CR>
 
 " undotree toggle
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
-"file browser
-nnoremap <leader>ff :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 
 " disable search highlighting
 if maparg('<C-L>', 'n') ==# ''
@@ -55,8 +53,6 @@ nnoremap <M-h> <c-w>h
 nnoremap <M-j> <c-w>j
 nnoremap <M-k> <c-w>k
 nnoremap <M-l> <c-w>l
-
-"Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
 
 " Lifted from: https://github.com/mopp/dotfiles/blob/master/.vimrc
 " Changing window size.
