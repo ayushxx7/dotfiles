@@ -54,6 +54,7 @@ Plug 'tweekmonster/django-plus.vim'                 " for django dev
 Plug 'Glench/Vim-Jinja2-Syntax'  "jinja syn-hl
 Plug 'mattn/emmet-vim'
 
+Plug 'tpope/vim-abolish' "snake_case to CamelCase
 Plug 'voldikss/vim-floaterm' "floating terminal
 " Neovim only Plugins
 if has('nvim')
