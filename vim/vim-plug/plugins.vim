@@ -51,11 +51,11 @@ Plug 'kana/vim-textobj-line'                        " custom text object for lin
 Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
 Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
 Plug 'tweekmonster/django-plus.vim'                 " for django dev
-Plug 'Glench/Vim-Jinja2-Syntax'  "jinja syn-hl
+Plug 'Glench/Vim-Jinja2-Syntax'                     " jinja syn-hl
 Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-abolish' "snake_case to CamelCase
-Plug 'dhruvasagar/vim-table-mode' "for md compatible tables
-Plug 'voldikss/vim-floaterm' "floating terminal
+Plug 'tpope/vim-abolish'                            " snake_case to CamelCase
+Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
+Plug 'voldikss/vim-floaterm'                        " floating terminal
 " Neovim only Plugins
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }

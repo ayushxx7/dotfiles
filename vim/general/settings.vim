@@ -26,7 +26,7 @@ set guioptions-=L               " remove left-hand scroll bar
 set guicursor=a:blinkwait0      " remove cursor blinking
 set noeb vb t_vb=               " disable the annoying bell sound.
 
-set nu                          " Current line number instead of of 0 set by rnu
+set nu                          " enable line numbers
 
 set ai                          " automatic indentation picked from parent line
 set ignorecase                  " ignore case when searching.
