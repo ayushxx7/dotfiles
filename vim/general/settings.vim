@@ -71,3 +71,20 @@ set guifontwide=NSimsun:h14
 " Status line color changes when moving in and out of insert mode.
 autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
 autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+
+command! FileHistory execute ":BCommits!"
+command! Resource source ~\\.vimrc
+
+" https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
+command! Cd :cd %:p:h
+command! Cdw :lcd %:p:h
+
+" Lifeted from: https://coderwall.com/p/faceag/format-json-in-vim
+com! FormatJSON %!python -m json.tool
+
+" Lifted from CocPrettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+if has('nvim')
+    set inccommand=nosplit
+endif
