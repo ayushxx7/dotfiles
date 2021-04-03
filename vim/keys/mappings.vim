@@ -79,3 +79,9 @@ nmap J 5j
 nmap K 5k
 xmap J 5j
 xmap K 5k
+
+"quickly switch colorscheme
+map ,m :colorscheme molokai<CR>
+map ,c :colorscheme PaperColor<CR>
+map ,g :colorscheme gruvbox<CR>
+map ,t :colo tender<CR>
