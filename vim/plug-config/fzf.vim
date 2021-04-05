@@ -8,7 +8,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 map <C-f> :Files<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
+nnoremap ,r :Rg<CR>
 nnoremap <leader>G :GGrep<CR>
 
 let g:fzf_tags_command = 'ctags -R'

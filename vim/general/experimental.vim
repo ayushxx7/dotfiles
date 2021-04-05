@@ -1,6 +1,6 @@
 nmap ,p :Prettier<CR>
 
-nmap ,r :Resource<CR>
+nmap ?? :Rg!<CR>
 
 " substitute in last visual selection
 noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
