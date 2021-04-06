@@ -1,5 +1,3 @@
-nmap ,p :Prettier<CR>
-
 nmap ?? :Rg!<CR>
 
 " substitute in last visual selection

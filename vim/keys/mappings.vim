@@ -86,3 +86,5 @@ map ,m :colorscheme molokai<CR>
 map ,c :colorscheme PaperColor<CR>
 map ,g :colorscheme gruvbox<CR>
 map ,t :colo tender<CR>
+
+nmap ,p :Prettier<CR>
