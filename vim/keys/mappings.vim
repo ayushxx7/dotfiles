@@ -75,6 +75,8 @@ xnoremap k gk
 nmap <silent> dsf ds)db
 nnoremap <silent> csf [(cb
 
+nmap // :BLines<CR>
+
 nmap ,, :ter<CR>A
 
 " quick jumps in a scrolling fashion
