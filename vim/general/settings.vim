@@ -105,7 +105,8 @@ EOF
 " configure nvcode-color-schemes
 let g:nvcode_termcolors=256
 " colorscheme snazzy
-colorscheme tender
+" colorscheme tender
+colorscheme solarized8_high
 
 if (has("termguicolors"))
     set termguicolors
