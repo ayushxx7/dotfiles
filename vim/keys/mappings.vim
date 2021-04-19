@@ -94,4 +94,4 @@ nmap ,p :Prettier<CR>
 
 map ,g :G<CR>
 
-nmap <leader>l %s/print(\(.*\))/log.info(" ".join([\1]))/
+nmap <leader>l :%s/print(\(.*\))/log.info(" ".join([\1]))/gc
