@@ -93,3 +93,6 @@ map ,t :colo tender<CR>
 nmap ,p :Prettier<CR>
 
 map ,g :G<CR>
+
+"Convert print statement to logging
+nmap <leader>l :%s/print(\(.*\))/log.info(" ".join([\1]))/gc
