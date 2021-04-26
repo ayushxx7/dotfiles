@@ -73,7 +73,9 @@ autocmd  InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=
 autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
 
 command! FileHistory execute ":BCommits!"
-command! Resource source ~\\.vimrc
+
+" https://vim.fandom.com/wiki/Multiple_commands_at_once
+command! Resource source ~\\.vimrc <bar> :e
 
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 command! Cd :cd %:p:h
