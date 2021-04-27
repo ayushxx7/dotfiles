@@ -50,6 +50,9 @@ Plug 'kana/vim-textobj-indent'                      " custom text object for ind
 Plug 'kana/vim-textobj-line'                        " custom text object for line (cil/cal)
 Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
 Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
+Plug 'iamcco/markdown-preview.nvim',
+      \ { 'do': 'cd app && yarn install'  }         " preview markdown files instantly
+
 Plug 'tweekmonster/django-plus.vim'                 " for django dev
 Plug 'Glench/Vim-Jinja2-Syntax'                     " jinja syn-hl
 Plug 'mattn/emmet-vim'
