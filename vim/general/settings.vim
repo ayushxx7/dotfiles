@@ -55,7 +55,14 @@ set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
 autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent foldmethod=indent
 
 " Remove trailing spaces when saving
-autocmd BufWritePre * %s/\s\+$//e
+fun! StripTrailingWhitespace()
+    " don't strip on these filetypes
+    if &ft =~ 'markdown'
+        return
+    endif
+    %s/\s\+$//e
+endfun
+autocmd BufWritePre * call StripTrailingWhitespace()
 
 " Theme Customisation
 colorscheme gruvbox
