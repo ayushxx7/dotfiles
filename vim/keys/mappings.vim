@@ -95,7 +95,8 @@ nmap ,p :Prettier<CR>
 map ,g :G<CR>
 
 "Convert print statement to logging
-nmap <leader>l :%s/print(\(.*\))/log.info(" ".join([\1]))/gc
+nmap <leader>l :%s/print(\(.*\))/log.info(" ".join(map(str, [\1]))/gc
+
 " buffer switch via tab
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
