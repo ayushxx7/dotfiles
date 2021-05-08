@@ -15,3 +15,5 @@ nmap <leader>yt Ilog.error(f"{traceback.format_exc()}")<Esc>
 
 nmap ,u Go[user]A	username = Ayush Mandowaraemail = ayushxx7@gmail.comusername = ayushxx7
 
+"Indentation from two to four spaces
+com! IndentToFourSpaces :%s/^\s*/&&
