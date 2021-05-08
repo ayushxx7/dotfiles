@@ -13,3 +13,5 @@ nmap <leader>y csflog.info<Esc><leader>w
 " to log traceback
 nmap <leader>yt Ilog.error(f"{traceback.format_exc()}")<Esc>
 
+nmap ,u Go[user]A	username = Ayush Mandowaraemail = ayushxx7@gmail.comusername = ayushxx7
+
