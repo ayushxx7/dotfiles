@@ -51,11 +51,11 @@ Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is s
 Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
 Plug 'iamcco/markdown-preview.nvim',
       \ { 'do': 'cd app && yarn install'  }         " preview markdown files instantly
-
-" Experiments
 Plug 'tpope/vim-abolish'                            " snake_case to CamelCase
 Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
 Plug 'voldikss/vim-floaterm'                        " floating terminal
+
+" Experiments
 
 " Neovim only Plugins
 if has('nvim')
