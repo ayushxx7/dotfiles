@@ -14,7 +14,6 @@ Plug 'nelstrom/vim-visual-star-search'              " expanding star search from
 Plug 'mhinz/vim-startify'                           " cool startup screen
 
 " THEMES
-Plug 'gruvbox-community/gruvbox'
 Plug 'ayu-theme/ayu-vim'
 Plug 'romainl/Apprentice'
 Plug 'joshdick/onedark.vim'
@@ -53,12 +52,14 @@ Plug 'will133/vim-dirdiff'                          " calculate diff betwee dire
 Plug 'iamcco/markdown-preview.nvim',
       \ { 'do': 'cd app && yarn install'  }         " preview markdown files instantly
 
+" Experiments
 Plug 'tweekmonster/django-plus.vim'                 " for django dev
 Plug 'Glench/Vim-Jinja2-Syntax'                     " jinja syn-hl
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-abolish'                            " snake_case to CamelCase
 Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
 Plug 'voldikss/vim-floaterm'                        " floating terminal
+
 " Neovim only Plugins
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(420) } }
