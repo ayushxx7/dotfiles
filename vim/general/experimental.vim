@@ -5,3 +5,11 @@ if has('nvim')
 endif
 
 nmap <leader>, :%s/^\s*//gc<CR>
+
+"wrap value in bracket with f-string
+nmap <leader>w ysib"ysi"}F"if<Esc>
+"change print to log.info
+nmap <leader>y csflog.info<Esc><leader>w
+" to log traceback
+nmap <leader>yt Ilog.error(f"{traceback.format_exc()}")<Esc>
+
