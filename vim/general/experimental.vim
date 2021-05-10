@@ -17,3 +17,8 @@ nmap ,u Go[user]A	username = Ayush Mandowaraemail = ayushxx7@gmail.comusern
 
 "Indentation from two to four spaces
 com! IndentToFourSpaces :%s/^\s*/&&
+
+"quick switch to normal mode (avoid esc)
+inoremap jj <Esc>
+inoremap jk <Esc>
+inoremap kj <Esc>
