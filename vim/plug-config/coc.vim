@@ -138,3 +138,6 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+"the location where .env file is present will be considered as root by coc
+autocmd FileType python let b:coc_root_patterns = ['.env']
