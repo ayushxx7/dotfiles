@@ -14,9 +14,8 @@ nnoremap <leader>G :GGrep<CR>
 let g:fzf_tags_command = 'ctags -R'
 " Border color
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
-" let g:fzf_layout = { 'window': 'vs' } " in case preview not working properly.
-let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline' "might add --no-unicode
-let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore-vcs --hidden'
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
