@@ -8,8 +8,6 @@ nnoremap <C-F2> :ts <CR>
 
 " vim tabs quick shortcuts
 map tn :tabnew<CR>
-map tk :tabprev<CR>
-map tj :tabnext<CR>
 map tq :tabclose<CR>
 
 " undotree toggle
