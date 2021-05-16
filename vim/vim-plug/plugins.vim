@@ -60,6 +60,8 @@ Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
 Plug 'voldikss/vim-floaterm'                        " floating terminal
 
 " Experiments
+Plug 'AndrewRadev/switch.vim'                       " true/false quick switch
+Plug 'liuchengxu/vim-which-key'                     " vim which key
 
 " Neovim only Plugins
 if has('nvim')
