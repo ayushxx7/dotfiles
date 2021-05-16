@@ -21,8 +21,12 @@ Plug 'aonemd/kuroi.vim'
 Plug 'rafi/awesome-vim-colorschemes'
 
 " THEME ENHANCEMENTS
-Plug 'vim-airline/vim-airline'                      " customized status line.
-Plug 'vim-airline/vim-airline-themes'               " airline themes
+
+" Disable vim-airline when firenvim starts since vim-airline takes two lines.
+if !exists('g:started_by_firenvim')
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+endif
 Plug 'sheerun/vim-polyglot'                         " better syntax highlighting
 
 Plug 'unblevable/quick-scope'                       " highlight for f,F,t,T
