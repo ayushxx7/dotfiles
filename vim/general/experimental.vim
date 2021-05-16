@@ -22,3 +22,13 @@ com! IndentToFourSpaces :%s/^\s*/&&
 inoremap jj <Esc>
 inoremap jk <Esc>
 inoremap kj <Esc>
+
+if exists('g:started_by_firenvim') && g:started_by_firenvim
+    " general options
+    set laststatus=0 nonumber noruler noshowcmd
+
+    augroup firenvim
+        autocmd!
+        autocmd BufEnter *.txt setlocal filetype=markdown | colorscheme github
+    augroup END
+endif
