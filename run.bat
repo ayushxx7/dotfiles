@@ -29,6 +29,8 @@ echo "Installing Ripgrep"
 start cmd /k choco install fzf -y
 echo "Installing BAT"
 start cmd /k choco install bat -y
+echo "Installing Lazygit"
+start cmd /k choco install lazygit -y
 echo "Make sure to run `:PlugInstall` in Vim once the setup is done."
 echo "Trying to run PlugInstall automatically"
 vim -s install_plugins.txt
