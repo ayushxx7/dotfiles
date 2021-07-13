@@ -1,11 +1,14 @@
 echo off
 set "params=%*"
 cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
-echo "Copying .vimrc to:" %userprofile%
-cp .vimrc %userprofile%
-echo "Removing _vimrc:" from %userprofile%\_vimrc
+echo "Removing existing .vimrc:" from %userprofile%\.vimrc
+echo "Storing removed .vimrc as .vimrc_old"
+mv %userprofile%\.vimrc %userprofile%\.vimrc_old
+echo "Removing existing _vimrc:" from %userprofile%\_vimrc
 echo "Storing removed _vimrc as _vimrc_old"
 mv %userprofile%\_vimrc %userprofile%\_vimrc_old
+echo "Copying setup .vimrc to:" %userprofile%
+cp .vimrc %userprofile%
 echo "Copying vim directory to .config folder"
 mkdir %userprofile%\.config
 robocopy vim %userprofile%\.config\vim /E
