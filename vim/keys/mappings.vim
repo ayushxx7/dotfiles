@@ -23,7 +23,7 @@ nnoremap <leader>z :%s//gc<Left><Left><Left>
 " substitute in last visual selection
 noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
 " quickly generate ctags
-nnoremap <leader>t :!ctags -R .
+nnoremap <leader>t :!ctags -R .<CR>
 
 " press `comma` to swtich to normal mode in terminal
 tnoremap , <C-\><C-n>
@@ -98,3 +98,6 @@ nmap <leader>l :%s/print(\(.*\))/log.info(" ".join(map(str, [\1]))/gc
 " buffer switch via tab
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
+
+" jump definition, split on right
+nmap g<C-]> <C-W>v<C-]>

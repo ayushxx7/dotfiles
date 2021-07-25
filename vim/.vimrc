@@ -21,3 +21,4 @@ source $HOME\\.config\\vim\\plug-config\\vim-cool.vim
 source $HOME\\.config\\vim\\plug-config\\autopairs.vim
 source $HOME\\.config\\vim\\plug-config\\floaterm.vim
 source $HOME\\.config\\vim\\plug-config\\whichkey.vim
+source $HOME\\.config\\vim\\plug-config\\mkdx.vim

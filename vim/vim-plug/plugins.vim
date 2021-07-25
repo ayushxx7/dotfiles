@@ -19,6 +19,7 @@ Plug 'nelstrom/vim-visual-star-search'              " expanding star search from
 Plug 'mhinz/vim-startify'                           " cool startup screen
 
 " THEMES
+Plug 'wojciechkepka/bogster'
 Plug 'ayu-theme/ayu-vim'
 Plug 'romainl/Apprentice'
 Plug 'joshdick/onedark.vim'
@@ -59,7 +60,7 @@ Plug 'kana/vim-textobj-line'                        " custom text object for lin
 Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
 Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
 Plug 'iamcco/markdown-preview.nvim',
-      \ { 'do': 'cd app && yarn install'  }         " preview markdown files instantly
+      \ { 'do': 'cd app && yarn install' , 'for': 'markdown' }         " preview markdown files instantly
 Plug 'tpope/vim-abolish'                            " snake_case to CamelCase
 Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
 Plug 'voldikss/vim-floaterm'                        " floating terminal
@@ -68,6 +69,11 @@ Plug 'voldikss/vim-floaterm'                        " floating terminal
 Plug 'AndrewRadev/switch.vim'                       " true/false quick switch
 Plug 'liuchengxu/vim-which-key'                     " vim which key
 Plug 'tpope/vim-speeddating'                        " ctrl-a/x to increment decrement dates
+Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'}                     " table of contents
+Plug 'junegunn/goyo.vim' " writing
+Plug 'junegunn/limelight.vim' " writing
+Plug 'SidOfc/mkdx' " writing
+Plug 'lervag/vimtex' " latex
 
 " Neovim only Plugins
 if has('nvim')
@@ -75,7 +81,7 @@ if has('nvim')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'christianchiarulli/nvcode-color-schemes.vim'
   Plug 'nvim-treesitter/playground'
-  Plug 'p00f/nvim-ts-rainbow'                       " color each bracket pair differently
+  " Plug 'p00f/nvim-ts-rainbow'                       " color each bracket pair differently
 endif
 
 call plug#end()
