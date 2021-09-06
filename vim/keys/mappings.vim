@@ -2,10 +2,6 @@
 let mapleader=" "
 
 " MAPPINGS
-" Ctrl+F1 to toggle menu bar
-nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-nnoremap <C-F2> :ts <CR>
-
 " vim tabs quick shortcuts
 map tn :tabnew<CR>
 map tq :tabclose<CR>
