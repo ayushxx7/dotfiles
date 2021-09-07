@@ -19,7 +19,7 @@ nnoremap <leader>z :%s//gc<Left><Left><Left>
 " substitute in last visual selection
 noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
 " quickly generate ctags
-nnoremap <leader>t :!ctags -R .
+nnoremap <leader>t :!ctags -R .<CR>
 
 " press `comma` to swtich to normal mode in terminal
 tnoremap , <C-\><C-n>
