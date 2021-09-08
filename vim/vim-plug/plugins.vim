@@ -73,6 +73,7 @@ Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'} " table of contents
 Plug 'junegunn/goyo.vim'      " distraction free writing
 Plug 'junegunn/limelight.vim' " distraction free writing
 Plug 'lervag/vimtex'          " latex
+Plug 'mbbill/undotree'        " undo tree
 Plug 'SirVer/ultisnips'       " Snippets - Engine
 Plug 'honza/vim-snippets'     " Snippets - default snips
 
@@ -82,7 +83,6 @@ if has('nvim')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'christianchiarulli/nvcode-color-schemes.vim'
   Plug 'nvim-treesitter/playground'
-  Plug 'p00f/nvim-ts-rainbow'                       " color each bracket pair differently
 endif
 
 call plug#end()
