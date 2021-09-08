@@ -59,7 +59,7 @@ Plug 'kana/vim-textobj-line'                        " custom text object for lin
 Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
 Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
 Plug 'iamcco/markdown-preview.nvim',
-      \ { 'do': 'cd app && yarn install'  }         " preview markdown files instantly
+      \ { 'do': 'cd app && yarn install' , 'for': 'markdown' }         " preview markdown files instantly
 Plug 'tpope/vim-abolish'                            " snake_case to CamelCase
 Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
 Plug 'voldikss/vim-floaterm'                        " floating terminal
@@ -68,6 +68,7 @@ Plug 'voldikss/vim-floaterm'                        " floating terminal
 Plug 'AndrewRadev/switch.vim'                       " true/false quick switch
 Plug 'liuchengxu/vim-which-key'                     " vim which key
 Plug 'tpope/vim-speeddating'                        " ctrl-a/x to increment decrement dates
+Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'} " table of contents
 Plug 'junegunn/goyo.vim'      " distraction free writing
 Plug 'junegunn/limelight.vim' " distraction free writing
 
