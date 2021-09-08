@@ -19,6 +19,7 @@ Plug 'nelstrom/vim-visual-star-search'              " expanding star search from
 Plug 'mhinz/vim-startify'                           " cool startup screen
 
 " THEMES
+Plug 'wojciechkepka/bogster'
 Plug 'ayu-theme/ayu-vim'
 Plug 'romainl/Apprentice'
 Plug 'joshdick/onedark.vim'
