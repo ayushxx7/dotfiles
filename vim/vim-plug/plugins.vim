@@ -72,6 +72,9 @@ Plug 'tpope/vim-speeddating'                        " ctrl-a/x to increment decr
 Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'} " table of contents
 Plug 'junegunn/goyo.vim'      " distraction free writing
 Plug 'junegunn/limelight.vim' " distraction free writing
+Plug 'lervag/vimtex'          " latex
+Plug 'SirVer/ultisnips'       " Snippets - Engine
+Plug 'honza/vim-snippets'     " Snippets - default snips
 
 " Neovim only Plugins
 if has('nvim')

@@ -57,7 +57,7 @@ autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expa
 " Remove trailing spaces when saving
 fun! StripTrailingWhitespace()
     " don't strip on these filetypes
-    if &ft =~ 'markdown'
+    if &ft =~ 'markdown' || &ft =~ 'snippets'
         return
     endif
     %s/\s\+$//e
