@@ -36,7 +36,8 @@ let g:which_key_map_comma = {',': 'terminal in current buffer',
       \ 'f': 'floating lazygit',
       \ 'g': 'Git Status',
       \ 'r': 'Fuzzy Search Text (RipGrep)',
-  \ 'u': '[user] block'}
+      \ 'u': '[user] block',
+      \ 'e': 'Toggle Table Mode'}
 
 nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
