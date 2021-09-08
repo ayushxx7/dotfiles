@@ -68,6 +68,8 @@ Plug 'voldikss/vim-floaterm'                        " floating terminal
 Plug 'AndrewRadev/switch.vim'                       " true/false quick switch
 Plug 'liuchengxu/vim-which-key'                     " vim which key
 Plug 'tpope/vim-speeddating'                        " ctrl-a/x to increment decrement dates
+Plug 'junegunn/goyo.vim'      " distraction free writing
+Plug 'junegunn/limelight.vim' " distraction free writing
 
 " Neovim only Plugins
 if has('nvim')
