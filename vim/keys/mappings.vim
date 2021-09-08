@@ -94,3 +94,6 @@ nmap <leader>l :%s/print(\(.*\))/log.info(" ".join(map(str, [\1]))/gc
 " buffer switch via tab
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
+
+" jump to definition, split on right
+nnoremap g] :botright vsp<cr><c-]>
