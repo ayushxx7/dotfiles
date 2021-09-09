@@ -54,6 +54,9 @@ endif
 set tabstop=2 shiftwidth=2 softtabstop=2 smarttab expandtab nocindent autoindent
 autocmd FileType python : set tabstop=4 shiftwidth=4 softtabstop=4 smarttab expandtab nocindent autoindent foldmethod=indent
 
+" comment / uncomment in .au3 files (requires tpope/vim-commentary)
+autocmd FileType autoit setlocal commentstring=;\ %s
+
 " Remove trailing spaces when saving
 fun! StripTrailingWhitespace()
     " don't strip on these filetypes
