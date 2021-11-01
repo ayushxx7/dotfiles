@@ -50,3 +50,6 @@ if exists('g:started_by_firenvim') && g:started_by_firenvim
         autocmd BufEnter *.txt setlocal filetype=markdown | colorscheme github
     augroup END
 endif
+
+" Disable indentLines by default
+let g:indentLine_enabled = 0

@@ -45,7 +45,7 @@ Plug 'bogado/file-line'                             " file:line jump
 Plug 't9md/vim-choosewin'                           " switch between windows easily
 Plug 'weilbith/nerdtree_choosewin-plugin'           " choose buffer when opening a file with nerdtree
 Plug 'romainl/vim-cool'                             " disable hl when search complete
-Plug 'Yggdroot/indentLine'                          " show indents
+" Plug 'Yggdroot/indentLine'                          " show indents
 Plug 'machakann/vim-highlightedyank'                " highlight yank
 Plug 'embark-theme/vim', { 'as': 'embark' }         " colorscheme embark
 
