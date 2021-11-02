@@ -80,7 +80,6 @@ xmap J 5j
 xmap K 5k
 
 "quickly switch colorscheme
-map ,m :colorscheme molokai<CR>
 map ,c :colorscheme PaperColor<CR>
 map ,t :colo tender<CR>
 
@@ -104,3 +103,6 @@ map <F6> :Goyo<CR>:Limelight!!<CR>:colo solarized8_high<CR>:setlocal nospell<CR>
 
 " Toggle Table Mode
 nmap ,e :TableModeToggle<CR>
+
+" Markdown Preview
+map ,m :MarkdownPreview<CR>
