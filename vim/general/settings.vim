@@ -118,7 +118,8 @@ EOF
 let g:nvcode_termcolors=256
 " colorscheme snazzy
 " colorscheme tender
-colorscheme solarized8_high
+" colorscheme solarized8_high
+colorscheme deep-space
 
 if (has("termguicolors"))
     set termguicolors
