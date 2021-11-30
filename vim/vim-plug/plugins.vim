@@ -85,4 +85,8 @@ if has('nvim')
   Plug 'nvim-treesitter/playground'
 endif
 
+" Flutter
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+
 call plug#end()
