@@ -113,6 +113,11 @@ nnoremap <leader>fr :FlutterHotReload<cr>
 nnoremap <leader>fR :FlutterHotRestart<cr>
 nnoremap <leader>fD :FlutterVisualDebug<cr>"
 
+" Quick Paste in insert mode
+inoremap PP <C-\><C-O>P
+
+" quick wrap in dollar
+nmap $$ ysiW$
 
 " JSON Path
 au FileType json noremap <buffer> <silent> <leader>d :call jsonpath#echo()<CR>
