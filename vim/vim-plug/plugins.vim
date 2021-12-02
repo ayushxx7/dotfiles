@@ -90,4 +90,5 @@ endif
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 
+Plug 'mogelbrod/vim-jsonpath' " json key chain
 call plug#end()
