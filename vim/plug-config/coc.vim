@@ -37,7 +37,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " gd -> gs because jedi crashing
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use Q to show documentation in preview window.
