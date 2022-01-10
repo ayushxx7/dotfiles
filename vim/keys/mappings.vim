@@ -22,7 +22,7 @@ noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
 nnoremap <leader>t :!ctags -R .<CR>
 
 " press `comma` to swtich to normal mode in terminal
-tnoremap , <C-\><C-n>
+tnoremap ,, <C-\><C-n>
 
 " Move between terminal and normal windows easily
 " Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
