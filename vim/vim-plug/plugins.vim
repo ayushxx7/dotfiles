@@ -25,6 +25,7 @@ Plug 'romainl/Apprentice'
 Plug 'joshdick/onedark.vim'
 Plug 'aonemd/kuroi.vim'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'vim-scripts/Colour-Sampler-Pack'
 
 " THEME ENHANCEMENTS
 
