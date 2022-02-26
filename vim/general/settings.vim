@@ -16,8 +16,8 @@ set backspace=2                 " make backspace work like most other apps
 set backspace=indent,eol,start
 
 set laststatus=2                " always show statusline
-set cursorcolumn
-set cursorline
+" set cursorcolumn
+" set cursorline
 set ruler                       " show line number and column number
 set guioptions-=m               " removes menu
 set guioptions-=T               " removes toolbar
