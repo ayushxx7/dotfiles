@@ -114,7 +114,7 @@ nnoremap <leader>fR :FlutterHotRestart<cr>
 nnoremap <leader>fD :FlutterVisualDebug<cr>"
 
 " Quick Paste in insert mode
-inoremap PP <C-\><C-O>P
+inoremap PP <C-\><C-O>p
 
 " quick wrap in dollar
 nmap $$ ysiW$
