@@ -8,9 +8,14 @@ cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) &&
 echo "Removing existing .vimrc:" from %userprofile%\.vimrc
 echo "Storing removed .vimrc as .vimrc_old"
 move %userprofile%\.vimrc %userprofile%\.vimrc_old
+
 echo "Removing existing _vimrc:" from %userprofile%\_vimrc
 echo "Storing removed _vimrc as _vimrc_old"
 move %userprofile%\_vimrc %userprofile%\_vimrc_old
+
+echo "Removing existing init.vim" from %localappdata%\nvim
+echo "Storing removed .init.vim as .init.vim.old"
+move %localappdata%\nvim\init.vim %localappdata%\nvim\init.vim.old
 
 :: copy vim conf from repo to desired paths
 echo "Copying setup .vimrc to:" %userprofile%
@@ -18,6 +23,8 @@ copy .vimrc %userprofile%
 echo "Copying vim directory to .config folder"
 mkdir %userprofile%\.config
 robocopy vim %userprofile%\.config\vim /E
+echo "Copying setup init.vim to:" %localappdata%\nvim
+copy init.vim %localappdata%\nvim
 
 :: create plugin directory
 echo "Making Plugged Directory, where all plugins from git will be stored"
