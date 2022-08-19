@@ -1,7 +1,7 @@
 nmap ?? :Rg!<CR>
 
 if has('nvim')
-    nmap <leader><leader> :bo vnew term://cmd<CR>A
+    nmap <leader><leader> :bo vnew term://zsh<CR>A
 endif
 
 nmap <leader>, :%s/^\s*//gc<CR>

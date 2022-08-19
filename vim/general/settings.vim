@@ -3,7 +3,7 @@ syntax on                       " enable basic syntax highlighting.
 
 set nocompatible                " for sneak
 set noswapfile                  " dont need swapfile
-set undodir=$HOME\.vim\undo-dir " stores all undo info in file.
+set undodir=$HOME/.vim/undo-dir " stores all undo info in file.
 set undofile
 scriptencoding utf-8
 set encoding=utf-8
@@ -85,7 +85,7 @@ autocmd  InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,r
 command! FileHistory execute ":BCommits!"
 
 " https://vim.fandom.com/wiki/Multiple_commands_at_once
-command! Resource source ~\\.vimrc <bar> :e
+command! Resource source $HOME/.vimrc <bar> :e
 
 " https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 command! Cd :cd %:p:h
