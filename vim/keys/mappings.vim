@@ -101,6 +101,9 @@ nnoremap g] :botright vsp<cr><c-]>
 map <F5> :Goyo 85%<CR>:Limelight<CR>:colo apprentice<CR>:setlocal spell<CR>
 map <F6> :Goyo<CR>:Limelight!!<CR>:colo deep-space<CR>:setlocal nospell<CR>
 
+" no fuss
+map <F4> :set nonumber<CR>:set signcolumn=no<CR>
+
 " Toggle Table Mode
 nmap ,e :TableModeToggle<CR>
 
