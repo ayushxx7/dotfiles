@@ -71,7 +71,7 @@ autocmd BufWritePre * call StripTrailingWhitespace()
 colorscheme gruvbox
 " colorscheme embark
 " colorscheme PaperColor
-set termguicolors
+" set termguicolors
 
 " Font & Colorscheme
 set background=dark

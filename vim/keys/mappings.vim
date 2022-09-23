@@ -22,16 +22,16 @@ noremap <leader>x <Esc>:%s/\%V//gc<Left><Left><Left><Left>
 nnoremap <leader>t :!ctags -R .<CR>
 
 " press `comma` to swtich to normal mode in terminal
-tnoremap ,, <C-\><C-n>
+" tnoremap ,, <C-\><C-n>
 
 " Move between terminal and normal windows easily
 " Reference: http://vimcasts.org/episodes/neovim-terminal-mappings/
 
 " Terminal mode:
-tnoremap <C-h> <c-\><c-n><c-w>h
-tnoremap <C-j> <c-\><c-n><c-w>j
-tnoremap <C-k> <c-\><c-n><c-w>k
-tnoremap <C-l> <c-\><c-n><c-w>l
+" tnoremap <C-h> <c-\><c-n><c-w>h
+" tnoremap <C-j> <c-\><c-n><c-w>j
+" tnoremap <C-k> <c-\><c-n><c-w>k
+" tnoremap <C-l> <c-\><c-n><c-w>l
 
 " Move between split windows easily
 " Insert mode:

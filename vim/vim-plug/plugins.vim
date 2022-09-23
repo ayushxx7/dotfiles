@@ -4,15 +4,15 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file search using fzf.
-Plug 'junegunn/fzf.vim'                             " fzf mappings.
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy file search using fzf.
+" Plug 'junegunn/fzf.vim'                             " fzf mappings.
 Plug 'tpope/vim-fugitive'                           " git plugin
 Plug 'tpope/vim-commentary'                         " to quickly comment and uncomment statements.
-Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Intellisense Plugin.
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Intellisense Plugin.
 Plug 'preservim/nerdtree'                           " file tree.
 Plug 'justinmk/vim-sneak'                           " super quick jumping to desired position.
 Plug 'svermeulen/vim-easyclip'                      " awesome clipboard like features for yank/delete.
-Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }      " opening brackets / quotes will add a matching closing pair
+" Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }      " opening brackets / quotes will add a matching closing pair
 Plug 'tpope/vim-surround'                           " changing surrounding brackets characters
 Plug 'tpope/vim-repeat'                             " covers a lot more in the dot (repeat command).
 Plug 'nelstrom/vim-visual-star-search'              " expanding star search from single word to all selection.
@@ -55,16 +55,16 @@ Plug 'raimon49/requirements.txt.vim'                " syn-hl for requirements.tx
 Plug 'MTDL9/vim-log-highlighting'                   " syn-hl for logs
 
 Plug 'tpope/vim-unimpaired'                         " remaps that people say are great
-Plug 'kana/vim-textobj-user'                        " custom text objects
-Plug 'kana/vim-textobj-indent'                      " custom text object for indent (cai/cii/caI/ciI)
-Plug 'kana/vim-textobj-line'                        " custom text object for line (cil/cal)
+" Plug 'kana/vim-textobj-user'                        " custom text objects
+" Plug 'kana/vim-textobj-indent'                      " custom text object for indent (cai/cii/caI/ciI)
+" Plug 'kana/vim-textobj-line'                        " custom text object for line (cil/cal)
 Plug 'jeetsukumaran/vim-pythonsense'                " python objects. (kana is slow)
 Plug 'will133/vim-dirdiff'                          " calculate diff betwee directories
 Plug 'iamcco/markdown-preview.nvim',
       \ { 'do': 'cd app && yarn install' , 'for': 'markdown' }         " preview markdown files instantly
 Plug 'tpope/vim-abolish'                            " snake_case to CamelCase
 Plug 'dhruvasagar/vim-table-mode'                   " for md compatible tables
-Plug 'voldikss/vim-floaterm'                        " floating terminal
+" Plug 'voldikss/vim-floaterm'                        " floating terminal
 
 " Experiments
 Plug 'AndrewRadev/switch.vim'                       " true/false quick switch
@@ -75,8 +75,8 @@ Plug 'junegunn/goyo.vim'      " distraction free writing
 Plug 'junegunn/limelight.vim' " distraction free writing
 Plug 'lervag/vimtex'          " latex
 Plug 'mbbill/undotree'        " undo tree
-Plug 'SirVer/ultisnips'       " Snippets - Engine
-Plug 'honza/vim-snippets'     " Snippets - default snips
+" Plug 'SirVer/ultisnips'       " Snippets - Engine
+" Plug 'honza/vim-snippets'     " Snippets - default snips
 
 " Neovim only Plugins
 if has('nvim')
