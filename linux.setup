@@ -1,0 +1,13 @@
+cp dotfiles/.vimrc ~/.vimrc
+mkdir ~/.config
+cp dotfiles/vim ~/.config/vim -r
+mkdir ~/.vim/plugged
+mkdir ~/.vim/undo-dir
+mkdir ~/.vim/autoload
+cp dotfiles/plug.vim ~/.vim/autoload/
+brew install nodejs
+brew install ripgrep
+brew install fzf
+brew install bat
+brew install lazygit
+:: vim -s install_plugins.txt
