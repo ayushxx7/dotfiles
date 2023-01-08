@@ -1,0 +1,38 @@
+1. Install neovim using curl
+
+Source: https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+```
+
+2. Add alias to .bashrc
+
+```
+alias nvim='~/.nvim.appimage'
+```
+
+3. Create file: ~/.config/nvim/init.vim
+
+4. Source vimrc in that file and add runtime path
+```
+let &runtimepath.=',/home/ubuntu/.vim'
+source $HOME/.vimrc
+```
+
+5. Enabled plugin for autocomplete and autopairs
+
+6. Node JS install using nvm
+
+Source: https://github.com/nvm-sh/nvm
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm install 16
+nvm use 16 # was facing issues with latest node on Ubuntu 16 LTS
+```
+
+
